@@ -4,29 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Event Management System</h1>
-        <nav>
-            <ul>
-                <li><a href="{{ url_for('events') }}">Events List</a></li>
-                <li><a href="{{ url_for('create_event') }}">Create New Event</a></li>
-                <!-- Adicione links para outras páginas, se necessário -->
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section>
-            <h2>About This System</h2>
-            <p>This system allows you to manage events effectively. You can create new events, view existing events, and more.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Event Management System. All rights reserved.</p>
-    </footer>
+    <h1>Welcome to the Event Management System</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('events') }}">Events List</a></li>
+            <li><a href="{{ url_for('create_event') }}">Create New Event</a></li>
+            <li><a href="{{ url_for('participants') }}">Participants List</a></li>
+            <li><a href="{{ url_for('create_participant') }}">Create New Participant</a></li>
+            <li><a href="{{ url_for('locations') }}">Locations List</a></li>
+            <li><a href="{{ url_for('create_location') }}">Create New Location</a></li>
+            <li><a href="{{ url_for('roles') }}">Roles List</a></li>
+            <li><a href="{{ url_for('create_role') }}">Create New Role</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
